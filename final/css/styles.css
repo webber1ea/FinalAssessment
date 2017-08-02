@@ -1,0 +1,57 @@
+/* Styles go here */
+html {
+  background-color: #63CEC2;
+}
+
+body {
+  font-family: Open Sans;
+  color: #F7F8F9;
+  margin: 0 auto;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.login {
+  background-color: rgba(67, 75, 89, 0.7);
+  width: 400px;
+  padding-top: 20px;
+  margin: 0 auto;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.signIn {
+  width: 200px;
+  display: inline-block;
+  border-radius: 10px;
+  justify-content: center;
+  color: #F7F8F9;
+}
+
+.signIn:hover {
+  color: #63CEC2;
+}
+
+input {
+  display: block;
+  border-radius: 10px;
+  padding: 5px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+a {
+  display:block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a:hover {
+  color: #63CEC2;
+}

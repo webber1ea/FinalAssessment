@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='myModule' lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body ng-controller="loginCtrl">
+
+  <ng-view></ng-view>
+  <div class="login" ng-app="myModule" ng-controller="login-ctrl">
+    <h2> SIGN IN </h2>
+    <input type="text" placeholder='Username' ng-model="username">
+    <input type="text" placeholder='********' ng-model="password">
+    <button class="signIn" ng-controller="loginCtrl" ng-click="checkLogin()" ng-submit="getProfile()"> SIGN IN </button>
+    <a href="">Forgot Password?</a>
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
+  <script src="js/module/module.js"></script>
+  <script src="js/config/routing.js"></script>
+  <script src="js/controllers/login-ctrl.js"></script>
+  <script src="js/controllers/profile-ctrl.js"></script>
+  <script src="js/service/login-service.js"></script>
+</body>
+</html>
